@@ -329,26 +329,26 @@ function HomePage() {
         </Grid.Col>
         <Grid.Col sm={6} lg={3}>
           <StampCard
-            color="blue"
-            icon="dollar-sign"
+            color="green"
+            icon="award"
             header={
               <a href="/#">
-                132 <small>Sales</small>
+                2 <small>New Awards</small>
               </a>
             }
-            footer={"12 waiting payments"}
+            footer={"Last week"}
           />
         </Grid.Col>
         <Grid.Col sm={6} lg={3}>
           <StampCard
-            color="green"
-            icon="shopping-cart"
+            color="blue"
+            icon="trending-up"
             header={
               <a href="/#">
-                78 <small>Orders</small>
+                4 <small>New friends</small>
               </a>
             }
-            footer={"32 shipped"}
+            footer={"Last week"}
           />
         </Grid.Col>
         <Grid.Col sm={6} lg={3}>
@@ -357,26 +357,37 @@ function HomePage() {
             icon="users"
             header={
               <a href="/#">
-                1,352 <small>Members</small>
+                12 <small>Friends Connected</small>
               </a>
             }
-            footer={"163 registered today"}
+            footer={"2 online"}
           />
         </Grid.Col>
         <Grid.Col sm={6} lg={3}>
           <StampCard
             color="yellow"
-            icon="message-square"
+            icon="home"
             header={
               <a href="/#">
-                132 <small>Comments</small>
+                3 <small>Apps Connected</small>
               </a>
             }
-            footer={"16 waiting"}
+            footer={"Coop, Storebox, Nemlig"}
           />
         </Grid.Col>
       </Grid.Row>
-      <Grid.Row cards deck>
+     
+      
+    </Page.Content>
+  );
+}
+// </SiteWrapper>
+export default HomePage;
+
+
+
+/*
+ <Grid.Row cards deck>
         <Grid.Col width={12}>
           <Card>
             <Table
@@ -479,7 +490,15 @@ function HomePage() {
           </Card>
         </Grid.Col>
       </Grid.Row>
-      <Grid.Row>
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+<Grid.Row>
         <Grid.Col sm={6} lg={4}>
           <Card title="Browser Stats">
             <Table className="card-table">
@@ -567,7 +586,19 @@ function HomePage() {
             </Card.Body>
           </Card>
         </Grid.Col>
-        <Grid.Col md={6} lg={12}>
+        
+        
+      </Grid.Row>
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+<Grid.Col md={6} lg={12}>
           <Grid.Row>
             <Grid.Col sm={6} lg={3}>
               <StatsCard
@@ -819,7 +850,14 @@ function HomePage() {
             </Grid.Col>
           </Grid.Row>
         </Grid.Col>
-        <Grid.Col width={12}>
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+<Grid.Col width={12}>
           <Card title="Invoices">
             <Table
               responsive
@@ -890,9 +928,4 @@ function HomePage() {
             />
           </Card>
         </Grid.Col>
-      </Grid.Row>
-    </Page.Content>
-  );
-}
-// </SiteWrapper>
-export default HomePage;
+*/
