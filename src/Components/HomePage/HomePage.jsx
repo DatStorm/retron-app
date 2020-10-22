@@ -289,26 +289,26 @@ function HomePage() {
             </Grid.Col>
             <Grid.Col sm={6}>
               <ProgressCard
-                header="New feedback"
-                content="62"
+                header="Money used Today"
+                content="134 DKK"
                 progressColor="red"
-                progressWidth={28}
+                progressWidth={14}
               />
             </Grid.Col>
             <Grid.Col sm={6}>
               <ProgressCard
-                header="Today profit"
-                content="$652"
+                header="Green score"
+                content="7.3"
                 progressColor="green"
-                progressWidth={84}
+                progressWidth={73}
               />
             </Grid.Col>
             <Grid.Col sm={6}>
               <ProgressCard
-                header="Users online"
-                content="76"
+                header="Money used This Week"
+                content="1156 DKK"
                 progressColor="yellow"
-                progressWidth={34}
+                progressWidth={69}
               />
             </Grid.Col>
           </Grid.Row>
