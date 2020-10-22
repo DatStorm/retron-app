@@ -63,7 +63,7 @@ function HomePage() {
         <Grid.Col lg={6}>
           <Card>
             <Card.Header>
-              <Card.Title>Development Activity</Card.Title>
+              <Card.Title>Food Categories</Card.Title>
             </Card.Header>
             <C3Chart
               style={{ height: "10rem" }}
@@ -71,19 +71,24 @@ function HomePage() {
                 columns: [
                   // each columns data
                   ["diary",612.3, 583.14, 589.22, 574.28, 588.52, 516.57],
-["meat",86.3, 87.19, 77.92, 87.68, 75.16, 76.08],
-["fruit_vegetables",283.34, 330.13, 282.98, 329.84, 329.41, 330.5],
-["grains",243.11, 235.67, 265.19, 264.17, 227.54, 270.89],
+                  ["meat",86.3, 87.19, 77.92, 87.68, 75.16, 76.08],
+                  ["fruit_vegetables",283.34, 330.13, 282.98, 329.84, 329.41, 330.5],
+                  ["grains",243.11, 235.67, 265.19, 264.17, 227.54, 270.89],
 
                 ],
                 type: "area", // default type of chart
-                groups: [["data1", "data2", "data3"]],
+                //groups: [["data1", "data2", "data3"]],
                 colors: {
-                  data1: colors["blue"],
+                  diary: colors["blue"],
+                  meat: colors['red'],
+                  fruit_vegetables: colors['green'],
+                  grains: colors['yellow'],
                 },
                 names: {
-                  // name of each serie
-                  data1: "Purchases",
+                  diary: "Diary",
+                  meat: "Meat",
+                  fruit_vegetables: "Fruit and Vegetables",
+                  grains: "Grains",
                 },
               }}
               axis={{
@@ -130,6 +135,11 @@ function HomePage() {
                 show: false,
               }}
             />
+          </Card>
+          <Card>
+            <Card.Header>
+              <Card.Title>Last 5 Receipts</Card.Title>
+            </Card.Header>
             <Table
               cards={true}
               striped={true}
@@ -138,71 +148,41 @@ function HomePage() {
             >
               <Table.Header>
                 <Table.Row>
-                  <Table.ColHeader colSpan={2}>User</Table.ColHeader>
-                  <Table.ColHeader>Commit</Table.ColHeader>
+                  <Table.ColHeader>Store</Table.ColHeader>
                   <Table.ColHeader>Date</Table.ColHeader>
-                  <Table.ColHeader />
+                  <Table.ColHeader colspan={2}>Amount</Table.ColHeader>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
                 <Table.Row>
-                  <Table.Col className="w-1">
-                    <Avatar imageURL="./demo/faces/male/9.jpg" />
-                  </Table.Col>
-                  <Table.Col>Ronald Bradley</Table.Col>
-                  <Table.Col>Initial commit</Table.Col>
-                  <Table.Col className="text-nowrap">May 6, 2018</Table.Col>
-                  <Table.Col className="w-1">
-                    <Icon link={true} name="trash" />
-                  </Table.Col>
+                  <Table.Col>Netto</Table.Col>
+                  <Table.Col>22. Oct 2020</Table.Col>
+                  <Table.Col>52.32</Table.Col>
+                  <Table.Col>DKK</Table.Col>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Col>
-                    <Avatar>BM</Avatar>
-                  </Table.Col>
-                  <Table.Col>Russell Gibson</Table.Col>
-                  <Table.Col>Main structure</Table.Col>
-                  <Table.Col className="text-nowrap">
-                    April 22, 2018
-                </Table.Col>
-                  <Table.Col>
-                    <Icon link={true} name="trash" />
-                  </Table.Col>
+                  <Table.Col>Netto</Table.Col>
+                  <Table.Col>22. Oct 2020</Table.Col>
+                  <Table.Col>12.95</Table.Col>
+                  <Table.Col>DKK</Table.Col>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Col>
-                    <Avatar imageURL="./demo/faces/female/1.jpg" />
-                  </Table.Col>
-                  <Table.Col>Beverly Armstrong</Table.Col>
-                  <Table.Col>Left sidebar adjustments</Table.Col>
-                  <Table.Col className="text-nowrap">
-                    April 15, 2018
-                </Table.Col>
-                  <Table.Col>
-                    <Icon link={true} name="trash" />
-                  </Table.Col>
+                  <Table.Col>Rema 1000</Table.Col>
+                  <Table.Col>21. Oct 2020</Table.Col>
+                  <Table.Col>174.15</Table.Col>
+                  <Table.Col>DKK</Table.Col>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Col>
-                    <Avatar imageURL="./demo/faces/male/4.jpg" />
-                  </Table.Col>
-                  <Table.Col>Bobby Knight</Table.Col>
-                  <Table.Col>Topbar dropdown style</Table.Col>
-                  <Table.Col className="text-nowrap">April 8, 2018</Table.Col>
-                  <Table.Col>
-                    <Icon link={true} name="trash" />
-                  </Table.Col>
+                  <Table.Col>Føtex</Table.Col>
+                  <Table.Col>19. Oct 2020</Table.Col>
+                  <Table.Col>59.95</Table.Col>
+                  <Table.Col>DKK</Table.Col>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Col>
-                    <Avatar imageURL="./demo/faces/female/11.jpg" />
-                  </Table.Col>
-                  <Table.Col>Sharon Wells</Table.Col>
-                  <Table.Col>Fixes #625</Table.Col>
-                  <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                  <Table.Col>
-                    <Icon link={true} name="trash" />
-                  </Table.Col>
+                  <Table.Col>Føtex</Table.Col>
+                  <Table.Col>19. Oct 2020</Table.Col>
+                  <Table.Col>13.00</Table.Col>
+                  <Table.Col>DKK</Table.Col>
                 </Table.Row>
               </Table.Body>
             </Table>
@@ -226,7 +206,7 @@ function HomePage() {
             <Grid.Col sm={6}>
               <Card>
                 <Card.Header>
-                  <Card.Title>Chart title</Card.Title>
+                  <Card.Title>Categories</Card.Title>
                 </Card.Header>
                 <Card.Body>
                   <C3Chart
@@ -234,18 +214,24 @@ function HomePage() {
                     data={{
                       columns: [
                         // each columns data
-                        ["data1", 63],
-                        ["data2", 37],
+                        ["data1", 590],
+                        ["data2", 280],
+                        ["data3", 265],
+                        ["data4", 80],
                       ],
                       type: "donut", // default type of chart
                       colors: {
-                        data1: colors["green"],
-                        data2: colors["green-light"],
+                        data1: colors["blue"],
+                        data2: colors["red"],
+                        data3: colors["green"],
+                        data4: colors["yellow"],
                       },
                       names: {
                         // name of each serie
-                        data1: "Maximum",
-                        data2: "Minimum",
+                        data1: "Diary",
+                        data2: "Meat",
+                        data3: "Fruits and Vegetables",
+                        data4: "Grains"
                       },
                     }}
                     legend={{
@@ -262,7 +248,7 @@ function HomePage() {
             <Grid.Col sm={6}>
               <Card>
                 <Card.Header>
-                  <Card.Title>Chart title</Card.Title>
+                  <Card.Title>Stores</Card.Title>
                 </Card.Header>
                 <Card.Body>
                   <C3Chart
@@ -270,10 +256,10 @@ function HomePage() {
                     data={{
                       columns: [
                         // each columns data
-                        ["data1", 63],
-                        ["data2", 44],
-                        ["data3", 12],
-                        ["data4", 14],
+                        ["Føtex", 6300],
+                        ["Netto", 4400],
+                        ["Rema", 1200],
+                        ["Brugsen", 1400],
                       ],
                       type: "pie", // default type of chart
                       colors: {
