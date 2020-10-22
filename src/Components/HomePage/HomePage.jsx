@@ -28,37 +28,37 @@ function HomePage() {
     <Page.Content title="Retron Dashboard">
       <Grid.Row cards={true}>
         <Grid.Col width={6} sm={4} lg={2}>
-          <StatsCard layout={1} movement={6} total="43" label="New Tickets" />
+          <StatsCard layout={1} movement={6} total="43" label="Receipts this month" />
         </Grid.Col>
         <Grid.Col width={6} sm={4} lg={2}>
           <StatsCard
             layout={1}
             movement={-3}
-            total="17"
-            label="Closed Today"
+            total="150"
+            label="Products This Month"
           />
         </Grid.Col>
         <Grid.Col width={6} sm={4} lg={2}>
-          <StatsCard layout={1} movement={9} total="7" label="New Replies" />
+          <StatsCard layout={1} movement={9} total="3234.42" label="DKK This Month"/>
         </Grid.Col>
         <Grid.Col width={6} sm={4} lg={2}>
           <StatsCard
             layout={1}
             movement={3}
-            total="27.3k"
-            label="Followers"
+            total="774"
+            label="Total Reciepts"
           />
         </Grid.Col>
         <Grid.Col width={6} sm={4} lg={2}>
           <StatsCard
             layout={1}
             movement={-2}
-            total="$95"
-            label="Daily earnings"
+            total="2731"
+            label="Total Products"
           />
         </Grid.Col>
         <Grid.Col width={6} sm={4} lg={2}>
-          <StatsCard layout={1} movement={-1} total="621" label="Products" />
+          <StatsCard layout={1} movement={-1} total="58,253" label="Total DKK" />
         </Grid.Col>
         <Grid.Col lg={6}>
           <Card>
@@ -70,34 +70,11 @@ function HomePage() {
               data={{
                 columns: [
                   // each columns data
-                  [
-                    "data1",
-                    0,
-                    5,
-                    1,
-                    2,
-                    7,
-                    5,
-                    6,
-                    8,
-                    24,
-                    7,
-                    12,
-                    5,
-                    6,
-                    3,
-                    2,
-                    2,
-                    6,
-                    30,
-                    10,
-                    10,
-                    15,
-                    14,
-                    47,
-                    65,
-                    55,
-                  ],
+                  ["diary",612.3, 583.14, 589.22, 574.28, 588.52, 516.57],
+["meat",86.3, 87.19, 77.92, 87.68, 75.16, 76.08],
+["fruit_vegetables",283.34, 330.13, 282.98, 329.84, 329.41, 330.5],
+["grains",243.11, 235.67, 265.19, 264.17, 227.54, 270.89],
+
                 ],
                 type: "area", // default type of chart
                 groups: [["data1", "data2", "data3"]],
