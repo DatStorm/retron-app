@@ -13,10 +13,10 @@ function HomePage() {
 					<StatsCard layout={1} movement={6} total="43" label="Receipts this month" />
 				</Grid.Col>
 				<Grid.Col width={6} sm={4} lg={2}>
-					<StatsCard layout={1} movement={-3} total="150" label="Products This Month" />
+					<StatsCard layout={1} movement={-3} total="150" label="Products this month" />
 				</Grid.Col>
 				<Grid.Col width={6} sm={4} lg={2}>
-					<StatsCard layout={1} movement={9} total="3234.42" label="DKK This Month" />
+					<StatsCard layout={1} movement={9} total="3234.42" label="DKK this month" />
 				</Grid.Col>
 				<Grid.Col width={6} sm={4} lg={2}>
 					<StatsCard layout={1} movement={3} total="774" label="Total Reciepts" />
@@ -117,7 +117,7 @@ function HomePage() {
 							<Table.Body>
 								<Table.Row>
 									<Table.Col>Netto</Table.Col>
-									<Table.Col>22. Oct 2020</Table.Col>
+									<Table.Col>24. Oct 2020</Table.Col>
 									<Table.Col>52.32</Table.Col>
 									<Table.Col>DKK</Table.Col>
 								</Table.Row>
@@ -141,7 +141,7 @@ function HomePage() {
 								</Table.Row>
 								<Table.Row>
 									<Table.Col>Føtex</Table.Col>
-									<Table.Col>19. Oct 2020</Table.Col>
+									<Table.Col>17. Oct 2020</Table.Col>
 									<Table.Col>13.00</Table.Col>
 									<Table.Col>DKK</Table.Col>
 								</Table.Row>
