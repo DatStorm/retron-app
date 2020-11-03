@@ -320,10 +320,10 @@ function HomePage() {
 				<Grid.Col width={12} sm={4} lg={12}>
 					<Grid.Row justifyContent="center">
 						<iframe
-            title="sign-iupo"
+              title="sign-iupo"
 							src="https://docs.google.com/forms/d/e/1FAIpQLSeBXPVbgSD2VvdIilroOGqa185IOjp3coMSFiMmG242tuffRQ/viewform?embedded=true"
 							width="640"
-							height="640"
+							height="1040"
 							frameborder="0"
 							marginheight="0"
 							marginwidth="0"
