@@ -443,7 +443,7 @@ function HomePage() {
 
   return (
     <Page.Content title="Retron Dashboard">
-      <Tabs position="center" initialTab="Track expenses">
+      <Tabs position="center" initialTab="Homepage">
         <Tab title="Homepage">
           <Grid.Row cards={true}>
             <TopBar />
