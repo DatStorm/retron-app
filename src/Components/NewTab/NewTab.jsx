@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -182,7 +182,7 @@ function makeRandomDistribution(node, minVal, maxFraction, totalValue) {
 		let update = false;
 		for (let child of node.children) {
 			if (isFull(child)) continue;
-			if (distribution[child.id] == 0) continue;
+			if (distribution[child.id] === 0) continue;
 			let maxDist = child.total * maxFraction;
 			let fraction = redistribute / hasRoom;
 			let change = Math.min(maxDist - distribution[child.id], fraction);
