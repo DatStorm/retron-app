@@ -19,6 +19,7 @@ import { ProgressBar } from 'react-bootstrap';
 
 import C3Chart from 'react-c3js';
 import BuildTracker from '../BuildTracker/BuildTracker';
+import NewTab from '../NewTab/NewTab';
 // <SiteWrapper>
 
 function HomePage() {
@@ -443,7 +444,7 @@ function HomePage() {
 
   return (
     <Page.Content title="Retron Dashboard">
-      <Tabs position="center" initialTab="Homepage">
+      <Tabs position="center" initialTab="New Tab">
         <Tab title="Homepage">
           <Grid.Row cards={true}>
             <TopBar />
@@ -453,6 +454,7 @@ function HomePage() {
             <GoggleForm />
           </Grid.Row>
         </Tab>
+        {/*
         <Tab title="Sankey">
           <iframe
             title="sign-iupo"
@@ -466,6 +468,7 @@ function HomePage() {
             Loading…
           </iframe>
         </Tab>
+        */}
         <Tab title="Treemap">
         <iframe
             title="sign-iupo"
@@ -479,8 +482,11 @@ function HomePage() {
             Loading…
           </iframe>
         </Tab>
-        <Tab title="Track expenses">
+        <Tab title="Track Expenses - Version 1">
           <BuildTracker />
+        </Tab>
+        <Tab title="Track Expenses - Version 2">
+          <NewTab/>
         </Tab>
       </Tabs>
 
