@@ -275,7 +275,7 @@ export default function NewTab() {
 						value={hackVal}
 						title={"Savings this month"}
 						handleChange={(event, newValue) => {
-							let val = Math.floor(monthlySpending ** (newValue / 100))
+							//let val = Math.floor(monthlySpending ** (newValue / 100))
 							setSavingValue(newValue)
 							setCurrentSavingValue(newValue)
 							setHackVal(newValue)

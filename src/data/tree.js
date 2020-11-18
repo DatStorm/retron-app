@@ -277,9 +277,9 @@ for (let id in counts) {
 let maxId = nodes.reduce((a,b) => Math.max(a,b), -1)
 for (let i=1; i<nodes.length; i++) {
     let node = nodes[i];
-    if (node.children.length == 0) continue;
+    if (node.children.length === 0) continue;
     let childrenTotal = node.children.reduce((a,b) => a+b.total, 0);
-    if (childrenTotal == node.total) continue;
+    if (childrenTotal === node.total) continue;
     node.children.push({
         id: ++maxId,
         name: "Other",
